@@ -11,7 +11,7 @@ identity is a per-board browser cookie. Pre-reveal card privacy and vote
 budgets are enforced in Postgres itself (row-level security), not just
 hidden in the UI.
 
-Built following the `ai-dev-tools-zoomcamp/01-ai-native-workflow` guide.
+Built following the [`ai-dev-tools-zoomcamp/01-ai-native-workflow`](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/tree/main/01-ai-native-workflow) guide.
 
 ## Setup
 
