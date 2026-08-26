@@ -11,7 +11,10 @@ the team (the tool does not generate feedback itself).
 - Each board runs one full retro cycle: submit → cluster → vote → discuss.
 - Access is by **shared link** — no accounts in this version. People enter a
   **name** (or choose to stay **anonymous**) when they join.
-- One person is the **facilitator** (the board creator) and controls phases.
+- One person is the **facilitator** and controls phases. Any participant can
+  self-claim the role with a single click — no secret link, since privacy of
+  the role isn't a concern. Only one facilitator at a time; claiming it
+  replaces whoever had it.
 
 ## Feedback entries
 
@@ -61,8 +64,8 @@ The facilitator advances the board through these phases:
 
 ## Roles
 
-- **Facilitator** — creates the board, controls phase transitions (reveal,
-  start voting, etc.).
+- **Facilitator** — self-claimed by any participant, controls phase
+  transitions (reveal, start voting, etc.).
 - **Participant** — joins via link, submits cards, clusters, votes, discusses.
 
 ## Explicitly out of scope (this version)
@@ -76,5 +79,5 @@ The facilitator advances the board through these phases:
 
 - Tech stack (frontend, backend, real-time transport, storage).
 - How returning participants are recognized without accounts (e.g. per-board
-  browser token) and how the facilitator link is secured.
+  browser token).
 - Whether anonymous cards are anonymous to the facilitator too.

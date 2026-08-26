@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Primary — brand purple #7D72DA */
+  --color-primary-50: #f0eefb;
+  --color-primary-100: #e0dcf6;
+  --color-primary-300: #ada3e9;
+  --color-primary-500: #7d72da;
+  --color-primary-600: #6459c9;
+  --color-primary-700: #4f45b0;
+
+  /* Success / secondary accent — brand teal-green #449C7A */
+  --color-success-50: #e6f4ee;
+  --color-success-100: #c7e6d7;
+  --color-success-500: #449c7a;
+  --color-success-600: #367c62;
+  --color-success-700: #2b6350;
+
+  /* Highlight — brand yellow-green, used sparingly (tags, vote badges) */
+  --color-highlight-100: #f4f8d3;
+  --color-highlight-400: #d9e761;
+  --color-highlight-600: #a3b02f;
+
+  /* Neutrals */
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f2f2f3;
+  --color-neutral-200: #e4e4e7;
+  --color-neutral-300: #cfd0d6;
+  --color-neutral-400: #9ca0a8;
+  --color-neutral-600: #5b6070;
+  --color-neutral-700: #3e414c;
+  --color-neutral-800: #23262f;
+  --color-neutral-900: #16181d;
+}
+
+:root {
+  --bg: var(--color-neutral-50);
+  --surface: var(--color-neutral-0);
+  --surface-tint: var(--color-highlight-100);
+  --border: var(--color-neutral-200);
+  --text: var(--color-neutral-900);
+  --text-muted: var(--color-neutral-600);
+  --text-on-primary: var(--color-neutral-0);
+  --primary: var(--color-primary-500);
+  --primary-hover: var(--color-primary-600);
+  --focus-ring: var(--color-primary-500);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--color-neutral-900);
+    --surface: var(--color-neutral-800);
+    --surface-tint: color-mix(in srgb, var(--color-highlight-400) 12%, var(--color-neutral-800));
+    --border: var(--color-neutral-700);
+    --text: var(--color-neutral-50);
+    --text-muted: var(--color-neutral-400);
+    --text-on-primary: var(--color-neutral-0);
+    --primary: var(--color-primary-500);
+    --primary-hover: var(--color-primary-300);
+    --focus-ring: var(--color-primary-300);
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
