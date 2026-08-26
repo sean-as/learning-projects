@@ -11,6 +11,8 @@ identity is a per-board browser cookie. Pre-reveal card privacy and vote
 budgets are enforced in Postgres itself (row-level security), not just
 hidden in the UI.
 
+Built following the `ai-dev-tools-zoomcamp/01-ai-native-workflow` guide.
+
 ## Setup
 
 ```bash
@@ -85,3 +87,16 @@ Deployed to Vercel (`vercel --prod`), hosted Supabase project via
 `supabase db push`. `_docs/tasks.md` is the full task backlog with
 acceptance criteria for every feature; `_docs/design-guidelines.md` covers
 the color tokens and component conventions.
+
+## Screenshots (live deployment)
+
+The hosted deployment won't stay up forever, so here's what it looked like
+running, taken 2026-08-26:
+
+| Home | Projects |
+| --- | --- |
+| ![Home page](_docs/screenshots/home.png) | ![Projects page](_docs/screenshots/projects.png) |
+
+| Board (join screen) | Action items |
+| --- | --- |
+| ![Board join screen](_docs/screenshots/board.png) | ![Action items page](_docs/screenshots/action-items.png) |
